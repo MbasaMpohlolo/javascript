@@ -1,0 +1,112 @@
+WEEK3 
+strings operations (creating strings operations)
+   Creating Strings:
+
+Strings can be created as primitives or objects using the String() constructor.
+String literals can be enclosed in single/double quotes or backticks for template literals.
+Accessing Characters:
+
+Use charAt() method or treat the string as an array-like object to access individual characters.
+Attempting to delete or assign values to characters using bracket notation won't succeed.
+String Comparison:
+
+In JavaScript, use the less-than and greater-than operators for string comparison.
+localeCompare() method compares strings with case sensitivity.
+For case-insensitive comparison, use a custom function.
+String Primitives vs. Objects:
+
+JavaScript distinguishes between string primitives and String objects.
+String literals and primitives are interchangeable.
+String objects behave differently in certain contexts like eval().
+Converting Objects to Primitives:
+
+String objects can be converted to primitives using the valueOf() method.
+
+ON-EVENT HANDLERS
+
+on-event handlers are properties of DOM elements used to manage how elements react to events like clicks, keypresses, and focus.
+They can be specified in HTML attributes (e.g., onclick) or set from JavaScript.
+Each object can have only one on-event handler for a given event, but addEventListener() allows multiple handlers.
+Execution and Parameters:
+
+Handlers specified as HTML attributes wrap code into a function with parameters like event.
+When invoked, the this keyword inside the handler refers to the DOM element.
+The return value from the handler determines if the event is canceled.
+Event Handler vs. Event Listener:
+
+Event handler can refer to any function or object registered to be notified of events.
+It specifically refers to functions registered via on... attributes or properties.
+Event listener refers to functions or objects registered via addEventListener().
+addEventListener():
+
+This method sets up a function to be called when a specified event is delivered to the target.
+It works by adding a function or an object implementing EventListener to the list of event listeners for the specified event type.
+
+(DATE OBJECT)
+Default Creation:
+
+A new Date instance without arguments creates an object for the current date and time.
+Date is based on a timestamp derived from Unix time (milliseconds since January 1st, 1970).
+Date Formats:
+
+Date can be created from timestamp, date string, or specifying date and time components.
+Example: new Date(), new Date(timestamp), new Date(date string), new Date(year, month, day, hours, minutes, seconds, milliseconds).
+Retrieving Date Components:
+
+Built-in methods like getYear(), getMonth(), getDate() retrieve different parts of the date.
+getDay() returns the day of the week, getHours() returns the hour, and so on.
+Modifying Date:
+
+Corresponding set methods allow modifying date components.
+Example: setFullYear(), setMonth(), setDate(), setHours(), etc.
+UTC Methods:
+
+getUTC...() methods calculate time based on Coordinated Universal Time (UTC).
+Adding and Subtracting Dates:
+
+Setters like setDays() expect an interval-appropriate value, rolling over/back into the next/preceding month(s) if necessary.
+
+Keydown Event:
+Occurs when a key is pressed down.
+Handled using onkeydown event handler.
+Example code snippet provided.
+
+Keyup Event:
+Occurs when a key is released.
+Handled using onkeyup event handler.
+
+
+Focus Event (onfocus):
+Occurs when an element gains focus.
+Handled using the onfocus event handler.
+
+Blur Event (onblur):
+Occurs when an element loses focus.
+Handled using the onblur event handler.
+
+Change Event (onchange):
+Occurs when the value of a form element changes.
+Handled using the onchange event handler.
+
+Submit Event (onsubmit):
+Occurs when a form is submitted.
+Handled using the onsubmit event handler.
+
+Document/Window Events in JavaScript:
+
+Load Event (onload):
+
+Occurs when a web page finishes loading in the browser.
+Handled using the onload event handler.
+Example code snippet provided demonstrating an alert message when the page finishes loading.
+Unload Event (onunload):
+
+Occurs when a user leaves the current web page.
+Handled using the onunload event handler.
+Example code snippet provided showing an alert message when trying to leave the page.
+Resize Event (onresize):
+
+Occurs when a user resizes the browser window.
+Handled using the onresize event handler.
+Example code snippet provided demonstrating an alert message when resizing the browser window.
+
